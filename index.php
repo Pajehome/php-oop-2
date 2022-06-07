@@ -17,6 +17,9 @@ $prodotto4 = new Prodotti('Smilla','Cuccia',11);
  var_dump($utente);
 
  $utente1 = new registrato('abdel qader','mourchid','amsis','sss');
+ $prezzoscontato = $utente1->getDiscount($prodotto1->getPrezzo());
+ $prodotto1->setPrezzo($prezzoscontato);
+ $utente1->setProdotti($prodotto1);
  var_dump($utente1);
 
 

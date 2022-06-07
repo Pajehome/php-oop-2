@@ -12,10 +12,12 @@ class registrato extends utente{
     public function getEmail(){
      return  $this->email;
     }
- 
-    public function setEmail($_email){
+    
+    
+    public function getDiscount($_prezzo){
         if($this->email){
-            (($_email * (100 - 20)/  100));
+           $prezzo = (($_prezzo * (100 - 20)/  100));
+           return $prezzo;
         }
     }
 }
