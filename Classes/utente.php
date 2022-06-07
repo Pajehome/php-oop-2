@@ -29,5 +29,10 @@ class Utente{
     public function setProdotti($_prodotti){
         $this->prodotti[] = $_prodotti;
     }
+
+    public function noDiscount($_prezzo){
+        $prezzo = $_prezzo;
+        return $prezzo;
+    }
 }
 ?>
